@@ -1,0 +1,267 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 20px 0 30px;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("../images/background_concrete_seamless.png");
+    margin: 0;
+    line-height: 1;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 100px;
+}   
+
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4aaaa5;
+    margin: -16px auto 20px;
+}
+
+.main {
+    width: 960px;
+    background-color: #ffffff;
+    border: 2px solid #dddddd;
+    padding: 40px;
+    line-height: 2.0;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+/* Header specific */
+
+.headerTitle {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 25px;
+    font-weight: bold;
+    width: 30%;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    text-align: center;
+    margin: 0;
+    padding: 30px 20px;
+    float: left;
+}
+
+.headerBox {
+    background-color: #ffffff;
+    width: 100%;
+    overflow: auto;
+    margin: 0 auto 40px;
+    border-bottom: 2px solid #cccccc;
+}
+
+.headerLimiter {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.navLinks {
+    font-size: 18px;
+    line-height: 85px;
+    float: right;
+    height: 85px;
+}
+
+a:link, a:visited {
+    color: #777777;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* index.html specific */
+
+#profilePic {
+    float:left;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+/* portfolio.html specific */
+
+.photoContainer {
+    float: left;
+    width: 40%;
+    position: relative;
+    padding: 0;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.photoContainer img {
+    width: 100%
+}
+
+.textOverlay {
+    position: absolute;
+    bottom: 22px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+    padding: 24px 0;
+}
+
+/* contact.html specific */
+
+form {
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+input[name="fullname"],[name="email"] {
+    margin-bottom: 2em;   
+    width: 100%; 
+}
+
+input[name="message"] {
+    margin-bottom: 2em;
+    width: 100%;
+    padding-bottom: 20em;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 8px 36px;
+    font-size: 12pt;
+}
+
+/* footer specific */
+
+#footer {
+    background-color: #666666;
+    font-size: 14px;
+    color: #cccccc;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    border-top: 6px solid #4aaaa5;
+    padding: 36px 0 4px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 980px) {
+    .headerLimiter {
+        width: 100vw;
+    }
+
+    .headerTitle {
+        width: 288px;
+        margin-left: 4vw;
+    }
+    
+    .main {
+        width: 640px;
+        padding: 5vmin;
+        margin-left: 5vmin;
+    }
+
+    .photoContainer {
+        width: 44%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-bottom: 18vmin;
+    }
+
+    .headerBox {
+        margin-bottom: 4vmin;
+    }
+
+    .headerLimiter {
+        width: 100vw;
+    }
+
+    .headerTitle {
+        width: 230px;
+        margin-left: 4vw;
+    }
+
+    .main {
+        width: 92vw;
+        padding: 5vmin;
+    }
+
+    p {
+        margin: 3vmin 0;
+    }
+
+    .photoContainer {
+        width: 38vw;
+        margin: 1vw;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        padding-bottom: 22vmin;
+    }
+
+    .headerBox {
+        margin-bottom: 4vmin;
+    }
+
+    .headerTitle {
+        float: none;
+        width: 100vw;
+    }
+
+    .navLinks {
+        float: none;
+        height: 65px;
+        line-height: 65px;
+        text-align: center;
+        width: 100vw;
+    }
+
+    .main {
+        width: 92vw;
+        padding: 5vmin;
+    
+    }
+
+    #profilePic {
+        float: none;
+        width: 100%;
+    }
+
+    p {
+        margin: 3vmin 0;
+    }
+
+    .photoContainer {
+        float: none;
+        width: 100%;
+        margin: 5vmin 0;
+    }
+
+    .textOverlay {
+        padding: 5vmin 0;
+    }
+}
